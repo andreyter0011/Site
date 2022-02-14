@@ -10,11 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="Domain\" />
     <Folder Include="Models\ViewComponents\" />
-    <Folder Include="Servoce\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />
@@ -24,6 +20,7 @@
   <ItemGroup>
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
+    <None Include="Views\Account\Login.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

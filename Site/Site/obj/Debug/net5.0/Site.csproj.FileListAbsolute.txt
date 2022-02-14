@@ -1,4 +1,3 @@
-C:\Users\Andrey\Pet-Project\Site\Site\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Andrey\Pet-Project\Site\Site\bin\Debug\net5.0\appsettings.json
 C:\Users\Andrey\Pet-Project\Site\Site\bin\Debug\net5.0\Site.exe
 C:\Users\Andrey\Pet-Project\Site\Site\bin\Debug\net5.0\Site.deps.json
@@ -143,8 +142,6 @@ C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\Shared\Metata
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\Shared\ScriptsPartial.cshtml.g.cs
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\Shared\SidebarPartial.cshtml.g.cs
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Site.RazorTargetAssemblyInfo.cache
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Site.RazorTargetAssemblyInfo.cs
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Site.Views.pdb
@@ -154,3 +151,9 @@ C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\ref\Site.dll
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Site.pdb
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Site.genruntimeconfig.cache
 C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Andrey\Pet-Project\Site\Site\bin\Debug\net5.0\appsettings.production.json
+C:\Users\Andrey\Pet-Project\Site\Site\bin\Debug\net5.0\appsettings.staging.json
+C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Andrey\Pet-Project\Site\Site\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
