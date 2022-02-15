@@ -18,11 +18,11 @@ namespace Site.Domain.Repositories.EntityFramework
         }
         public ServiceItem GetServiceItemByID(Guid id)
         {
-            return context.serviceItems.FirstOrDefault(x => x.ID == id);
+            return context.serviceItems.FirstOrDefault(x => x.Id == id);
         }
         public void SaveServiceItem(ServiceItem entity)
         {
-            if (entity.ID == default)
+            if (entity.Id == default)
                 context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Added;
             else
                 context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -30,7 +30,7 @@ namespace Site.Domain.Repositories.EntityFramework
         }
         public void DeleteServiceItem(Guid id)
         {
-            context.serviceItems.Remove(new ServiceItem() { ID = id });
+            context.serviceItems.Remove(new ServiceItem() { Id = id });
             context.SaveChanges();
         }
     }

@@ -39,19 +39,19 @@ namespace Site.Domain
             });
             modelbuilder.Entity<TextField>().HasData(new TextField
             {
-                ID = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
+                Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                 CodeWord = "PageIndex",
                 Title = "Главная"
             });
             modelbuilder.Entity<TextField>().HasData(new TextField
             {
-                ID = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
+                Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                 CodeWord = "PageServices",
                 Title = "Наши услуги"
             });
             modelbuilder.Entity<TextField>().HasData(new TextField
             {
-                ID = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
+                Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                 CodeWord = "PageContacts",
                 Title = "Контакты"
             });

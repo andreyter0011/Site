@@ -7,7 +7,7 @@ namespace Site.Domain.Repositories.Abstract
     public interface ITextFieldsRepository
     {
         IQueryable<TextField> GetTextFields();
-        TextField GetTextFieldByID(Guid id);
+        TextField GetTextFieldById(Guid id);
         TextField GetTextFieldByCodeWord(string codeWord);
         void SaveTextField(TextField entity);
         void DeleteTextField(Guid id);

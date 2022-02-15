@@ -1,7 +1,8 @@
-﻿using Site.Domain.Entities;
-using Site.Domain.Repositories.Abstract;
-using System;
+﻿using System;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Site.Domain.Entities;
+using Site.Domain.Repositories.Abstract;
 
 namespace Site.Domain.Repositories.EntityFramework
 {
@@ -12,29 +13,34 @@ namespace Site.Domain.Repositories.EntityFramework
         {
             this.context = context;
         }
+
         public IQueryable<TextField> GetTextFields()
         {
             return context.textFields;
         }
-        public TextField GetTextFieldByID(Guid id)
+
+        public TextField GetTextFieldById(Guid id)
         {
-            return context.textFields.FirstOrDefault(x => x.ID == id);
+            return context.textFields.FirstOrDefault(x => x.Id == id);
         }
+
         public TextField GetTextFieldByCodeWord(string codeWord)
         {
-            return context.textFields.FirstOrDefault(x =>x.CodeWord == codeWord);
+            return context.textFields.FirstOrDefault(x => x.CodeWord == codeWord);
         }
+
         public void SaveTextField(TextField entity)
         {
-            if (entity.ID == default)
-                context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Added;
+            if (entity.Id == default)
+                context.Entry(entity).State = EntityState.Added;
             else
-                context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-           context.SaveChanges();
+                context.Entry(entity).State = EntityState.Modified;
+            context.SaveChanges();
         }
+
         public void DeleteTextField(Guid id)
         {
-            context.textFields.Remove(new TextField() { ID = id });
+            context.textFields.Remove(new TextField() { Id = id });
             context.SaveChanges();
         }
     }

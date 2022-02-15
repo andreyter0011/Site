@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>51976ee9-6d16-40ea-8e69-8800d26b037b</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\ViewComponents\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />
@@ -22,6 +22,7 @@
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="Views\Account\Login.cshtml" />
+    <None Include="Views\Shared\Components\Sidebar\Default.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
