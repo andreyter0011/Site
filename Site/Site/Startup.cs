@@ -68,7 +68,15 @@ namespace Site
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
+            app.Use(async (context, next) =>
+            {
+                await next();
+                if (context.Response.StatusCode == 404)
+                {
+                    context.Request.Path = "/Home";
+                    await next();
+                }
+            });
             //в процессе разработки нам важно видеть какие именно ошибки
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
@@ -83,6 +91,7 @@ namespace Site
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseStatusCodePagesWithReExecute("/home/errorstatus/{0}");
 
             //регистриуруем нужные нам маршруты (ендпоинты)
             app.UseEndpoints(endpoints =>
